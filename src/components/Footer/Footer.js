@@ -37,18 +37,18 @@ const Footer = () => {
                         <li>Privacy Policy</li>
                         <li>Payment Terms</li>
                     </ul>
-                    <img className="footer-logo" src={Logo} />
+                    <img className="footer-logo" src={Logo} alt='Logo' />
                     <div className="social-icons">
-                        <a href='#'><i class="fa-brands fa-facebook-f first"></i></a>
-                        <a href='#'><i class="fa-brands fa-instagram second"></i></a>
-                        <a href='#'><i class="fa-brands fa-x-twitter third"></i></a>
-                        <a href='#'><i class="fa-brands fa-linkedin-in fourth"></i></a>
+                        <a href='/'><i class="fa-brands fa-facebook-f first"></i></a>
+                        <a href='/'><i class="fa-brands fa-instagram second"></i></a>
+                        <a href='/'><i class="fa-brands fa-x-twitter third"></i></a>
+                        <a href='/'><i class="fa-brands fa-linkedin-in fourth"></i></a>
                     </div>
                 </div>
             </div>
             <div className='lasthai'>
                 <p>All Right Reserve to <span>RG Fitness Club</span></p>
-                <p>For more website contact us <span><a href='#'>careersweb0001@gmail.com</a></span></p>
+                <p>For more website contact us <span><a href='https://mail.google.com/'>careersweb0001@gmail.com</a></span></p>
             </div>
         </div>
     )

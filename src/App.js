@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import Lottie from "lottie-react";
 import Loading from "./components/Assets/loading.json";
 import Header from "./components/Header/Header";
@@ -33,7 +33,7 @@ function App() {
   const founderRef = useRef(null);
 
   // Section data
-  const sections = [
+  const sections = useMemo(() => [
     { id: "home", ref: homeRef, Component: Home },
     { id: "aboutus", ref: aboutUsRef, Component: AboutUS },
     { id: "services", ref: servicesRef, Component: Services },
@@ -44,7 +44,7 @@ function App() {
     { id: "connect", ref: connect, Component: Connect },
     { id: "location", ref: locationRef, Component: Location },
     { id: "founder", ref: founderRef, Component: Founder },
-  ];
+  ], [homeRef, aboutUsRef, servicesRef, pricingRef, faq, workoutRef, feedbackRef, connect, locationRef, founderRef]);
 
   // Function to scroll to a specific section
   const scrollToSection = (section) => {

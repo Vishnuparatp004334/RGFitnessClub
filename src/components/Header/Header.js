@@ -9,7 +9,7 @@ const Header = ({ scrollToSection }) => {
     <>
       <div className='header'>
         {/* <h1 className='logo'>RG<span>Fitness</span></h1> */}
-        <img className='logo' src={Logo}/>
+        <img className='logo' src={Logo} alt='Logo' />
         <div className='sidebar'>
           <p onClick={() => scrollToSection('home')}>Home</p>
           <p onClick={() => scrollToSection('aboutus')}>About Us</p>
