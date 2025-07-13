@@ -1,0 +1,283 @@
+.footer {
+  background-color: #242424;
+  color: #ffffff;
+  padding: 0% 0%;
+  text-align: center;
+}
+
+.footer-top {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-top h2 {
+  font-size: 40px;
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.footer-content {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footer-column {
+  margin: 0px;
+}
+
+.footer-column h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer-column .com {
+  /* list-style: none; */
+  padding: 0;
+  margin-left: 24%;
+  width: 100%;
+}
+
+.footer-column .legal {
+  /* list-style: none; */
+  padding: 0;
+  margin-left: 35%;
+  width: 100%;
+}
+
+.footer-column ul li {
+  /* margin-left: 30%; */
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  cursor: pointer;
+  color: #b8b8b8;
+  font-weight: 500;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #b8b8b8;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.footer-column ul li:hover {
+  color: #fff;
+}
+
+.footer-logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-left: 40px;
+  padding-bottom: 20px;
+}
+
+.social-icons i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #e6e6e6;
+}
+
+.social-icons .first:hover {
+  color: #0084FF;
+}
+
+.social-icons .second:hover {
+  background: linear-gradient(207.51deg, rgba(91, 81, 216, 0.865079) -11.59%, rgba(131, 58, 180, 0.666667) 6.55%, #C13584 26.24%, #E1306C 43.66%, #FD1D1D 70.55%, #FED877 93.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.social-icons .third:hover {
+  color: #00B2FF;
+}
+
+.social-icons .fourth:hover {
+  color: #00B2FF;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lasthai {
+  background: #000;
+  width: 100%;
+  padding: 1.5% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lasthai p {
+  font-size: 18px;
+}
+
+.lasthai p span {
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 1536px) {
+  .footer-top h2 {
+    font-size: 50px;
+  }
+
+  .footer-column h3 {
+    font-size: 40px;
+  }
+
+  .footer-column ul li {
+    font-size: 27px;
+  }
+
+  .footer-logo {
+    width: 180px;
+    margin-left: 60px;
+  }
+
+  .social-icons {
+    margin-left: 60px;
+  }
+
+  .social-icons i {
+    font-size: 40px;
+    gap: 20px;
+  }
+
+  .lasthai p {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .footer-top h2 {
+    font-size: 60px;
+  }
+
+  .footer-column h3 {
+    font-size: 45px;
+  }
+
+  .footer-column ul li {
+    font-size: 33px;
+  }
+
+  .footer-logo {
+    width: 210px;
+    margin-left: 70px;
+  }
+
+  .social-icons {
+    margin-left: 70px;
+    gap: 25px;
+  }
+
+  .social-icons i {
+    margin-top: 3%;
+    font-size: 45px;
+  }
+
+  .lasthai p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer-top h2 {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+
+  .footer-column .com {
+    margin-left: 0;
+    list-style: none;
+  }
+
+  .footer-column .legal {
+    margin-left: 0;
+    list-style: none;
+  }
+
+  .footer-column .legal li {
+    text-align: center;
+  }
+  .footer-column h3{
+    font-size: 20px;
+  }
+
+  .footer-column .com li {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+
+  .social-icons {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
+    display: inline-block;
+  }
+
+  .social-icons i {
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .lasthai {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

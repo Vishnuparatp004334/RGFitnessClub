@@ -1,0 +1,745 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  margin-top: 75px;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  /* Ensure the video is below the overlay */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity for darkness */
+  z-index: 2;
+  /* Place the overlay above the video */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* Text color to stand out against the dark overlay */
+  z-index: 3;
+  /* Content should be above the overlay */
+}
+
+.herocontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  z-index: 9;
+  text-align: center;
+  display: block;
+  width: 60%;
+}
+
+.herocontent h2 {
+  display: block;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.herocontent h2 span {
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-top: 1%;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.herocontent h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.herocontent h1 span {
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-top: 1%;
+  font-weight: 600;
+  display: inline-block;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: scale(1);
+    /* Default position */
+  }
+
+  50% {
+    transform: scale(1.1);
+    /* Bounce upwards */
+  }
+}
+
+.aboutus {
+  background: #000;
+  width: 100%;
+  /* height: 60vh; */
+  position: relative;
+  padding: 10px 10% 10px 10%;
+  background: url('../Assets/gymback.png') no-repeat center center/cover;
+  overflow: hidden;
+}
+
+.aboutus-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.aboutus-content {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.aboutus .aboutus-content h1 {
+  font-size: 40px;
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-weight: 700;
+  padding-top: 15px;
+  /* margin-bottom: 30px; */
+}
+
+.aboutus-content h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  text-align: left;
+    background: linear-gradient(0deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  /* display: inline-block; */
+}
+
+.aboutus-content p {
+  text-align: left;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.aboutus-content p span {
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.aboutus-content ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.aboutus-content ul li {
+  margin: 8px 0;
+  font-weight: 500;
+  color: #f2f2f2;
+  text-align: left;
+}
+
+.aboutus-content blockquote {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 18px;
+  color: #ccc;
+  text-align: center;
+}
+
+.services {
+  width: 100%;
+  /* height: 85vh; */
+  background: #000;
+  text-align: center;
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 40px;
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.services-con {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two cards per row */
+  gap: 30px;
+  padding: 1% 10%;
+}
+
+/* Services box styles */
+.services-box {
+  position: relative;
+  border-radius: 10px;
+  padding: 4px;
+  color: #fff;
+  background: #333;
+  /* Background color inside the box */
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.services-box div {
+  border-radius: 10px;
+  background: #000;
+  padding: 20px;
+}
+
+/* Gradient border animation */
+.services-box::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff007c, #ff7300, #ffe600, #00ff6c, #00e6ff, #8a2be2);
+  background-size: 300%;
+  animation: borderAnimation 5s linear infinite;
+  z-index: -1;
+  /* Keeps the animation behind the box content */
+}
+
+/* Inner box background */
+.services-box::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background: #333;
+  /* Inner background color */
+  border-radius: 10px;
+  z-index: -2;
+  /* Ensures the inner background is below the gradient border */
+}
+
+/* Keyframes for the gradient animation */
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.services-box h3 {
+  font-size: 30px;
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #fcfcfc 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.services-box p {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.whatwehave {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.whatwehave h1 {
+  font-size: 40px;
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.whatwehave p {
+  margin-bottom: 15px;
+  margin-top: -5px;
+  font-size: 18px;
+}
+
+.equipments {
+  width: 100%;
+  padding: 1% 10%;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.equipments h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #fcfcfc 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.equi-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background: #000;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.equi-box .equiimg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mySwipersection {
+  position: relative;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.custom-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-bullet:hover {
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  /* Highlight on hover */
+}
+
+.custom-bullet.active {
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  /* Active bullet color */
+  transform: scale(1.5);
+  /* Slightly enlarge the active bullet */
+}
+
+.pricing {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1% 10%;
+  padding-bottom: 4%;
+}
+
+.pricing h1 {
+  font-size: 40px;
+  background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.pricing .price-col {
+  width: 100%;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.insidecon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+
+.insidecon:last-child {
+  border: none;
+}
+
+.insidecon .insideleft {
+  text-align: left;
+  width: 60%;
+  border-right: 1px solid #fff;
+  padding: 1% 10%;
+}
+
+.insidecon .insideleft p {
+  font-size: 19px;
+}
+
+.insidecon .insideright {
+  padding: 1% 10%;
+}
+
+.insidecon .insideright p {
+  font-size: 19px;
+}
+
+@media (min-width: 1920px) {
+  .herocontent h2 {
+    font-size: 60px;
+  }
+
+  .herocontent h1 {
+    font-size: 60px;
+  }
+
+  .aboutus-content h3 {
+    font-size: 50px;
+  }
+
+  .aboutus h1 {
+    font-size: 60px;
+  }
+
+  .aboutus-content {
+    width: 100%;
+  }
+
+  .aboutus-content p {
+    font-size: 33px;
+    /* letter-spacing: 2px; */
+    word-spacing: 2px;
+    line-height: 44px;
+  }
+
+  .services h1 {
+    font-size: 60px;
+  }
+
+  .services-box h3 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .services-box p {
+    font-size: 33px;
+    padding-bottom: 30px;
+  }
+
+  .whatwehave h1 {
+    font-size: 60px;
+  }
+
+  .whatwehave p {
+    font-size: 33px;
+    margin-top: 5px;
+    padding-bottom: 25px;
+  }
+
+  .equipments h3 {
+    font-size: 50px;
+  }
+
+  .equi-box {
+    height: 350px;
+  }
+
+  .custom-bullet {
+    width: 15px;
+    height: 15px;
+  }
+
+  .pricing h1 {
+    font-size: 60px;
+  }
+
+  .pricing .price-col {
+    border: 2px solid #fff;
+  }
+
+  .insidecon {
+    border-bottom: 2px solid #fff;
+  }
+
+  .insidecon .insideleft {
+    width: 65%;
+    border-right: 2px solid #fff;
+  }
+
+  .insidecon .insideleft p {
+    font-size: 33px;
+  }
+
+  .insidecon .insideright p {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero {
+    height: 75vh;
+  }
+
+  .herocontent {
+    width: 70%;
+  }
+
+  .herocontent h2 {
+    font-size: 50px;
+  }
+
+  .herocontent h1 {
+    font-size: 50px;
+  }
+
+  .aboutus h1 {
+    font-size: 50px;
+  }
+
+  .aboutus-content h3 {
+    font-size: 40px;
+  }
+
+  .aboutus-content p {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+
+  .services h1 {
+    font-size: 50px;
+  }
+
+  .services-box h3 {
+    font-size: 40px;
+  }
+
+  .services-box p {
+    font-size: 27px;
+  }
+
+  .services-box div {
+    padding: 30px;
+  }
+
+  .whatwehave h1 {
+    font-size: 50px;
+  }
+
+  .whatwehave p {
+    font-size: 27px;
+  }
+
+  .equipments h3 {
+    font-size: 40px;
+  }
+
+  .pricing h1 {
+    font-size: 50px;
+  }
+
+  .insidecon .insideleft p {
+    font-size: 27px;
+  }
+
+  .insidecon .insideright p {
+    font-size: 27px;
+  }
+
+  .insidecon .insideleft {
+    width: 65%;
+  }
+}
+
+@media (max-width: 440px) {
+  .cube {
+    display: none;
+  }
+
+  .aboutus {
+    width: 100%;
+    padding: 1% 3%;
+  }
+
+  .hero {
+    margin-top: 60px;
+  }
+
+  .herocontent {
+    width: 100%;
+  }
+
+  .herocontent h2 {
+    font-size: 22px;
+  }
+
+  .herocontent h1 {
+    font-size: 22px;
+  }
+
+  .hero {
+    height: 75vh;
+  }
+
+  .aboutus .aboutus-content h1 {
+    font-size: 30px;
+  }
+
+  .aboutus-content h3 {
+    font-size: 23px;
+    /* margin-top: -20px; */
+  }
+
+  .aboutus-content p {
+    font-size: 18px;
+  }
+
+  .services {
+    width: 100%;
+    padding-top: 0;
+    /* padding: 1% 3%; */
+  }
+
+  .services h1 {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  .services-con {
+    padding: 1% 3%;
+    grid-template-columns: repeat(1, 1fr);
+    /* Two cards per row */
+  }
+
+  .services-box h3 {
+    font-size: 22px;
+  }
+
+  .services-box p {
+    font-size: 18px;
+  }
+
+  .whatwehave h1 {
+    font-size: 25px;
+  }
+
+  .whatwehave p {
+    font-size: 18px;
+  }
+
+  .equipments {
+    padding: 1% 3%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .equipments h3 {
+    font-size: 22px;
+  }
+
+  .pricing {
+    padding: 1% 3%;
+  }
+
+  .pricing h1 {
+    font-size: 25px;
+  }
+
+  .insidecon .insideleft {
+    width: 70%;
+    padding: 1% 3%;
+  }
+
+  .insidecon .insideleft p {
+    font-size: 15px;
+    margin-top: 8px;
+  }
+
+  .insidecon .insideright {
+    padding: 3% 3%;
+  }
+
+  .insidecon .insideright p {
+    font-size: 15px;
+  }
+}

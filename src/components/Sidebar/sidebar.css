@@ -1,0 +1,30 @@
+.sidemodal{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    background: #000;
+    height: 230px;
+}
+.sidemodal .insidesidemodal{
+    padding: 0% 0%;
+}
+.sidemodal .insidesidemodal p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 10px;
+    border-bottom: 1px solid #8a8989;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sidemodal .insidesidemodal p:hover{
+    scale: 1.2;
+}
+.sidemodal .insidesidemodal p:last-child{
+    border-bottom: none;
+}
