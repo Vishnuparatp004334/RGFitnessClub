@@ -13,7 +13,7 @@ const Faq = () => {
     ];
 
     const answers = [
-        "Our gym is open Monday to Saturday from 6:00 AM to 9:00 PM, and on Sunday It will closed. We aim to provide flexible hours to accommodate your schedule.",
+        "Our gym is open Monday to Saturday from 5:00 AM to 10:00 AM in morning and from 4 PM to 9 PM in evening, and on Sunday It will closed. We aim to provide flexible hours to accommodate your schedule.",
         "Yes, we have certified personal trainers who can create customized workout plans to help you achieve your fitness goals. Contact our front desk or visit our website to book a session.",
         "We offer various membership plans, including monthly, quarterly, and annual options. Each plan is designed to suit different budgets and fitness needs. Check out our pricing page for more details.",
         "We are equipped with state-of-the-art facilities, including cardio machines, free weights, strength training machines, and functional fitness equipment. Additionally, we have a dedicated area for stretching and yoga.",
